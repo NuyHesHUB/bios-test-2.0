@@ -1,9 +1,9 @@
 import './App.css';
 /* 추가 */
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './Home'
-import Window from './components/Window'
-import Bios from './components/Bios'
+/* import Home from './Home' */
+import Window from './Windows/Window'
+import Bios from './Bios/Bios'
 
 
 function App() {

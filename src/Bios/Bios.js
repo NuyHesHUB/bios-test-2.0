@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 /* 추가 */
-import './Bios.css'
+import '../styles/Bios.scss'
 /* import {Link} from 'react-router-dom' */
 import Typing from './Typing'
 
@@ -44,13 +44,24 @@ const Bios = () => {
         <div id="bios-wrap">
             {/* <h3>Bios page</h3> */}
             <br/><br/>
-            <div className='img-logo-wrap' style={{display:'flex', justifyContent:'space-between', marginTop:'-30px', padding:'0 90px'}}>
+            <div className='img-logo-wrap' style={{display:'flex', justifyContent:'space-between', marginTop:'-30px', padding:'0 35px'}}>
                 <div>
-                    <img src={`${process.env.PUBLIC_URL}/img/a-logo.png`} style={{width:'40px',height:'60px', marginLeft:'10px'}} alt="logo" />
-                    <span style={{color:'#fff', height:'100px', width:'100px', display:'inline-block', textAlign:'left' ,marginLeft:'10px'}}>Award Modular International INC. </span>
+                    <img src={`${process.env.PUBLIC_URL}/img/a-logo.png`} style={{width:'48px',height:'90px', marginLeft:'10px', marginTop:'25px'}} alt="logo" />
+                    <span className='left-title' style={{color:'#fff'}}>Front-end Portfolio<i>Hello World</i></span>
                 </div>
-                <img src={`${process.env.PUBLIC_URL}/img/epa-logo.png`} style={{width:'20%',height:'20%', marginTop:'-10px'}} alt="logo" />
+                <pre className='pre-wrap name-logo-title' contentEditable={false} style={{color:'tomato'/* ,textAlign:'center' */}}>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;____ _______ _______ ________ ________ ___  ___ ___  ___ ________ _______ ___   __<br/> 
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/   //  _   //  _   //  _____//  _____//  / /  //  / /  //  _____//  _   //  /  / /<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/   //  //  //  //  //  /____ /  /____ /  /_/  //  /_/  //  /____ /  //  //   \ / /<br/> 
+                    ____ /   //  //  //  //  //____   //  _____//   _   / \    _ //  _____//  //  //  /\   /<br/> 
+                    /  //   //  //  //  //  //_____/ //  /____ /  / /  /  /   /  /  /____ /  //  //  / /  /<br/> 
+                    \______//______//______//_______//_______//__/ /__/  /__ /  /_______//______//__/ /__/<br/>
+                    &nbsp;                                                                             v. 0.10.11
+                </pre>
+
+                <img src={`${process.env.PUBLIC_URL}/img/epa-logo.png`} style={{width:'300px',height:'180px', marginTop:'0px'}} alt="logo" />
             </div>
+            
             <div className='bios-content'>
                 <Typing/>
             </div>
