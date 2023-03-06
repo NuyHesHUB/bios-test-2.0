@@ -14,7 +14,7 @@ const StyledTaskBar = styled.div`
 const TaskBar = () => {
     return (
         <StyledTaskBar>
-            fdsa
+            
         </StyledTaskBar>
     );
 };

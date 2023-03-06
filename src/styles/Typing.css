@@ -1,12 +1,15 @@
 .text{
     /* border-right: 5px solid #ddd; */
-    animation: cursor 1s step-end infinite;
+    /* animation: cursor 1s step-end infinite;
     animation-duration: 0.3s; 
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite; */
     font-size: 22px;
+    line-height: 1.3;
+    color: #999;
+    white-space: pre-wrap;
 }
-@keyframes cursor{
+/* @keyframes cursor{
     0%{border-right: 5px solid #fff} 
     50%{border-right: 5px solid #000} 
     100%{border-right: 5px solid #fff} 
-}
+} */
